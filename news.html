@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Vietnam</title>
+    <link rel="stylesheet" href="dinhdang.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #000; /* Màu nền header là đen */
+            color: #fff; /* Màu chữ trắng cho header */
+            padding: 10px 0;
+        }
+        h1 {
+            color: #fff; /* Màu chữ trắng cho header */
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .logo {
+            max-width: 100px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Căn giữa các mục trong nav */
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Màu chữ trắng cho header */
+        }
+        nav ul li a:hover {
+            color: #007bff; /* Màu chữ khi hover */
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Căn giữa phần tìm kiếm */
+            margin-top: 10px;
+        }
+        .search-bar input[type="text"], .search-bar button {
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-bar button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Căn giữa các phần tử trong main */
+            gap: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .article {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex: 1 1 300px; /* Đảm bảo các ô tin tức có chiều rộng tối thiểu là 300px */
+        }
+        .article h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .article p {
+            color: #555;
+        }
+        .article img {
+            max-width: 100%;
+            display: block;
+            margin: 10px auto;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            flex: 1 1 300px; /* Đảm bảo các ô video có chiều rộng tối thiểu là 300px */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        }
+
+        footer p {
+        margin: 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#"><img src="img/logo.png" alt="Nike Logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Clothing.html">Clothing</a></li>
+                    <li><a href="Shoes.html">Shoes</a></li>
+                    <li><a href="About us.html">About us</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </nav>
+            <form class="search-bar" onsubmit="searchProducts(event)">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    
+    <main>
+        <section class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/_uho8HNa5QI?si=qa-V1gecE4quitvf" frameborder="0" allowfullscreen></iframe>
+        </section>
+        
+        <section class="article">
+            <h2>Ra mắt bộ sưu tập giày mới "Air Max 2024"</h2>
+            <p>Nike vừa công bố bộ sưu tập giày thể thao "Air Max 2024", mang đậm phong cách hiện đại và công nghệ tiên tiến. Bộ sưu tập này không chỉ gây ấn tượng với thiết kế độc đáo mà còn cải tiến về hiệu suất và sự thoải mái cho người sử dụng.</p>
+            <img src="img/2.jpg" alt="Nike Air Max 2024">
+        </section>
+
+        <section class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/freRkr00otY?si=FMdK4hgPpqEacLK6" frameborder="0" allowfullscreen></iframe>
+        </section>
+        
+        <section class="article">
+            <h2>Nike chính thức ra mắt chiến dịch quảng cáo "Just Do It 2024"</h2>
+            <p>Với thông điệp "Just Do It", chiến dịch mới của Nike nhắm đến khuyến khích mọi người vượt qua giới hạn bản thân và chinh phục những mục tiêu mới. Chiến dịch lần này thu hút sự chú ý lớn từ cộng đồng yêu thích thể thao và đang được lan truyền mạnh mẽ trên các phương tiện truyền thông xã hội.</p>
+            <img src="img/3.jpg" alt="Nike Just Do It 2024 Campaign">
+        </section>
+
+        <section class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/yer0j_zqjNM?si=s0NL2uFhoar1dSSn" frameborder="0" allowfullscreen></iframe>
+        </section>
+        
+        <section class="article">
+            <h2>Nike giới thiệu công nghệ mới trong dòng sản phẩm "FutureCraft"</h2>
+            <p>Nike vừa công bố sử dụng công nghệ mới "FutureCraft" trong các sản phẩm giày thể thao, nhằm nâng cao hiệu suất và đáp ứng tốt hơn nhu cầu của người tiêu dùng trong thế giới hiện đại.</p>
+            <img src="img/4.jpg" alt="Future Craft">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tin tức Nike.</p>
+    </footer>
+</body>
+</html>

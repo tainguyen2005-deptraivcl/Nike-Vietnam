@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Vietnam</title>
+    <link rel="stylesheet" href="dinhdang3.css">
+    <script src="details.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <a href="#"><img src="img/logo.png" alt="Nike Logo" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="Clothing.html">Clothing</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="About us.html">About us</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </nav>
+                <form class="search-bar" onsubmit="searchProducts(event)">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+        <center>
+            <section class="banner">
+                <div class="video-container">
+                    <iframe width="560" height="150" src="https://www.youtube.com/embed/uXlWYZ022zU?si=oT1c_ymWK4bjHCNJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </center>
+        <main>
+            <section class="clothing">
+                <h2>Shoes</h2>
+                <div class="clothing-container">
+                    <nav class="vertical-menu">
+                        <ul>
+                            <li><a href="menshoes.html">Men</a></li>
+                            <li><a href="womenshoes.html">Women</a></li>
+                            <li><a href="kidshoes.html">Kids</a></li>
+                        </ul>
+                    </nav>
+                    <section class="featured">
+                        <h2>Kids`s Shoes - Sneakers</h2>
+                        <ul class="products">
+                            <li>
+                                <div class="product item">
+                                    <div class="product-top">
+                                        <a href="" class="product-thumb">
+                                            <img src="kid/s1.png" alt="">
+                                        </a>
+                                        <a href="" class="buy-now">Mua Ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="" class="product-cat">Kid`s Shoes</a><br>
+                                        <a href="" class="product-name">Air Jordan 1 Low SE</a>
+                                        <div class="product-price">$142.00</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product item">
+                                    <div class="product-top">
+                                        <a href="" class="product-thumb">
+                                            <img src="kid/s2.png" alt="">
+                                        </a>
+                                        <a href="" class="buy-now">Mua Ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="" class="product-cat">Kid`s Shoes</a><br>
+                                        <a href="" class="product-name">Nike Dunk Low</a>   
+                                        <div class="product-price">$143.00</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product item">
+                                    <div class="product-top">
+                                        <a href="" class="product-thumb">
+                                            <img src="kid/s3.png" alt="">
+                                        </a>
+                                        <a href="" class="buy-now">Mua Ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="" class="product-cat">Kid`s Shoes</a><br>
+                                        <a href="" class="product-name">Nike Dunk Low SE</a>
+                                        <div class="product-price">$139.00</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product item">
+                                    <div class="product-top">
+                                        <a href="" class="product-thumb">
+                                            <img src="kid/s4.png" alt="">
+                                        </a>
+                                        <a href="" class="buy-now">Mua Ngay</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="" class="product-cat">Kid`s Shoes</a><br>
+                                        <a href="" class="product-name">Air Pegasus 41</a>
+                                        <div class="product-price">$159.00</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="product-details">
+                    <img src="" id="modalImage" alt="Product Image">
+                    <h2 id="modalName">Product Name</h2>
+                    <p id="modalCategory">Category</p>
+                    <p id="modalPrice">Price</p>
+                    <label for="modalSize">Size:</label>
+                    <select id="modalSize"></select>
+                    <select tabindex="2">
+                        <option selected>36</option>
+                        <option selected>37</option>
+                        <option selected>38</option>
+                        <option selected>39</option>
+                        <option selected>40</option>
+                        <option selected>41</option>
+                        <option selected>42</option></select>
+                    <a href="">Mua Ngay</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Nike, Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
